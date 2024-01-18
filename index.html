@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meals a Day</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #c7d4ff;
+        }
+        .header {
+            background-color: #005fd3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .section {
+            background-color: white;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>polina`s recipe book</h1>
+</div>
+
+<div class="container">
+    <div class="section">
+        <h2 onclick="showRecippe('breakfast')">Breakfast☕️</h2>
+        <p>Breakfast is often referred to as the most important meal of the day. It kickstarts your metabolism, helping you burn calories throughout the day. It also gives you the energy you need to get things done and helps you focus at work or at school. Breakfast
+
+            Eggs
+            Cereal
+            Yogurt
+            Toast
+            Fruit
+            Coffee</p>
+    </div>
+
+    <div class="section"onclick="showRecippe('lunch')">
+        <h2>Lunch🍲</h2>
+        <p>Eating lunch raises your blood sugar level in the middle of the day, helping you focus for the remainder of the day. It also gives you the energy to continue your day and prevents overeating or snacking on unhealthy food later in the day. Lunch
+
+            Sandwiches
+            Salads
+            Soups
+            Pasta
+            Chicken
+            Fish</p>
+    </div>
+
+    <div class="section" onclick="showRecippe('dinner')">
+        <h2>Dinner🥘</h2>
+        <p>Dinner helps in regulating the blood sugar levels that are essential for a healthy body. Your body uses the nutrients in your evening meal to repair muscles and tissues, synthesize hormones, and grow new cells while you sleep. Dinner
+
+            Meat
+            Fish
+            Chicken
+            Vegetables
+            Pasta
+            Rice
+            Potatoes
+            Salads</p>
+    </div>
+    
+    <div class="section">
+        <label for="products">what you need to make toast like the one in the photo 💗:</label>
+        <select id="products">
+            <option value="eggs">eggs</option>
+            <option value="cereal">avocado</option>
+            <option value="yogurt">yogurt</option>
+            <option value="toast">toast</option>
+            <option value="fruit">fruit</option>
+            <option value="coffee">peanut paste</option>
+            <option value="yogurt">banana</option>
+            <option value="toast">mozzarella</option>
+            <option value="fruit">fig</option>
+            <option value="fruit">mascarpone cheese</option>
+        </select>
+    </div>
+    <div class="section" id="recipes"></div>
+</div><!--
+<div class="section">
+    <div class="image-box">
+        <img src="https://www.nourishandtempt.com/wp-content/uploads/2021/09/0AD25438-2A50-4D38-A017-7A9001651D7B-1639x2048.jpg" alt="Изображение 1" height="300px">
+    </div>
+    <div class="image-box">
+        <img src="https://www.nourishandtempt.com/wp-content/uploads/2021/03/161875533_446477683276927_4856809046486987009_n.jpg" alt="Изображение 2" height="300px">
+    </div>
+    <div class="image-box">
+        <img src="https://www.nourishandtempt.com/wp-content/uploads/2021/09/AC028AD6-8A5D-4A17-9D8C-FF7180E8F3F0-1639x2048.jpg" alt="Изображение 3" height="300px">
+    </div>
+    <div class="image-box">
+        <img src="https://www.nourishandtempt.com/wp-content/uploads/2021/03/162258872_561836271417236_3616443231801535176_n.jpg" alt="Изображение 4" height="300px">
+    </div>
+</div>-->
+
+<script src="script.js"></script>
+
+</body>
+</html>
